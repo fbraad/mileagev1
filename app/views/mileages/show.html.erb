@@ -1,0 +1,15 @@
+<div class="container">
+  <div class="row">
+    <div class="col-xs-12 col-md-6 col-md-offset-3">
+      
+	    <p><%= @mileage.date %> | <%= @mileage.km %> | <%= @mileage.comment %></p>
+
+	      <%= link_to "Back to mileages", mileages_path %>
+
+	      <%= simple_form_for [@mileage] do |f| %>
+	        <%= f.submit "Submit", class: "btn btn-primary" %>
+	      <% end %>
+
+    </div>
+  </div>
+</div>

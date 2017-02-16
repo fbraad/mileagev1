@@ -1,0 +1,2 @@
+class Mileage < ApplicationRecord
+end
